@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cannonball Target Practice</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body onLoad="init();">
+    <canvas id="canvas" width="650px" height="400px"></canvas>
+    <form name="form" id="form" onsubmit="return fire();">
+        <label>Set the velocities and then fire the cannonball. </label> <br>
+        <label>Horizontal displacement</label> <br>
+        <input type="text" name="hvelo" id="hvelo" value="25" type="number" min="-150" max="150" required> <br>
+        <label>Initial vertical displacement</label>
+        <input type="text" name="vvelo" id='vvelo' value="-25" type="number" min="-150" max="150" required>
+        <button>Fire Away!</button>
+    </form>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
